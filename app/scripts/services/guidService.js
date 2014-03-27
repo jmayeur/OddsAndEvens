@@ -1,7 +1,7 @@
 (function(angular){
     'use strict';
 
-    angular.module('OddsOrEvens').factory('GuidService', [function(){
+    angular.module('OddsAndEvens').factory('GuidService', [function(){
         var guidServiceInstance;
 
         guidServiceInstance = {

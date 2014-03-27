@@ -1,7 +1,7 @@
 (function(angular){
     'use strict';
 
-    angular.module('OddsOrEvens').factory('TileService', ['GuidService', function(guidService){
+    angular.module('OddsAndEvens').factory('TileService', ['GuidService', function(guidService){
         var tileServiceInstance;
 
         tileServiceInstance = {
@@ -36,9 +36,6 @@
                     guid: guidService.guidGenerator()
                 }
 
-                if (Object.seal){
-                    Object.seal(result);
-                }
 
                 return result;
             }

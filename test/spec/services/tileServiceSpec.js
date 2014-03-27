@@ -1,13 +1,13 @@
 (function(){
     'use strict';
 
-    describe('Service: tileService', function () {
+    describe('Service: TileService', function () {
 
         var tileServiceInstance;
 
         // load the controller's module
         beforeEach(function(){
-            module('OddsOrEvens');
+            module('OddsAndEvens');
             inject(function(TileService){
                 tileServiceInstance = TileService;
             });
@@ -24,12 +24,6 @@
             var tile;
             tile =  tileServiceInstance.getTile(1);
             expect(tile.guid).not.toBeUndefined();
-        });
-
-        it('Should be sealed', function(){
-            var tile;
-            tile = tileServiceInstance.getTile(0);
-            expect(Object.isSealed(tile)).toBeTruthy();
         });
 
         it('Should fail if a non-numeric char is passed in', function(){

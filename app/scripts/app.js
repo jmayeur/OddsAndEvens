@@ -1,6 +1,6 @@
 (function(angular){
     'use strict';
 
-    angular.module('OddsOrEvens', []);
+    angular.module('OddsAndEvens', []);
 
 }(angular));

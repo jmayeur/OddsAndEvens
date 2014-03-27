@@ -1,7 +1,7 @@
 (function(){
     'use strict';
 
-    describe('Service: guidService', function () {
+    describe('Service: GuidService', function () {
 
         var guidServiceInstance,
             guidRegEx;
@@ -11,7 +11,7 @@
 
         // load the controller's module
         beforeEach(function(){
-            module('OddsOrEvens');
+            module('OddsAndEvens');
             inject(function(GuidService){
                 guidServiceInstance = GuidService;
             });
@@ -56,5 +56,28 @@ good
  19	7	2	36
  66	4	3	-7
  34	99	-23	-4
+
+
+
+ bad
+ 3	90	49	53	-6	-5	34	17
+ 11	-5	8	-6	34	-23	-1	0
+ -5	23	22	0	-7	65	-21	1
+ -22	41	23	-4	-23	19	87	65
+ 4	-7	-3	92	1	87	-3	19
+ 5	15	12	87	7	-5	3	12
+ 2	2	-3	-44	46	87	18	64
+ 5	44	0	-3	-76	-9	87	10
+
+
+ good
+ 3	90	49	53	-6	-5	-9	17
+ 11	-5	8	-6	34	-23	-1	0
+ -5	23	22	0	-7	65	-21	1
+ -22	41	23	-4	-23	19	87	65
+ 4	-7	-3	92	1	87	-3	19
+ 5	15	12	87	7	-5	3	12
+ -3	2	-3	-44	46	87	18	64
+ 5	44	0	2	-76	34	87	10
 
 * */

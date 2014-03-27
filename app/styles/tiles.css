@@ -1,0 +1,113 @@
+/* ==|== application styles =======================================================
+   styles used by the Tiles App
+   ========================================================================== */
+#content, .center {
+    margin: 0 auto;
+}
+
+.ui-state-disabled {
+    opacity: 1;
+    filter: Alpha(Opacity=100);
+    background-image: none;
+}
+
+.droptarget{
+    height:52px;
+    width:52px;
+    padding:0px;
+    margin:0px;
+    float:left;
+    background-color: #D1D7FF; /*#1c1c1c*/;
+    position: inherit;
+}
+
+.tile{
+    height:48px;
+    width:48px;
+    padding:0px;
+    margin:0px;
+    float:left;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    cursor: move;
+}
+
+.tile:hover {
+    background-color: #D1D7FF;
+
+}
+
+.tile_even{
+    background-color: #bedfff;
+}
+
+.tile_odd{
+    background-color: #1c1c1c;
+}
+
+.number{
+    color: #aaaaaa;
+    text-align: center;
+    font-size:x-large;
+    font-weight: bolder;
+    padding:10px;
+}
+
+.singleItemList{
+    height:52px;
+    width:52px;
+    padding:0px;
+    float:left;
+    margin:0px 0px 0px 0px;
+    padding: 0px;
+}
+
+#tile-list {
+    list-style-type: none;
+    /*margin:0px 0px 0px 0px;*/
+    /*height:404px;
+    width:402px;*/
+    overflow: hidden;
+    background-color: #1c1c1c;
+    border: 5px solid #aaaaaa;
+    padding:2px 0px 0px 2px;
+    -moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;
+    /*float:left;*/
+    opacity:0.95;
+    filter:alpha(opacity=95); /* For IE8 and earlier */
+}
+
+.host {
+    height:410px;
+    width:410px;
+}
+
+.unselectable{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.circle{
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    background-color: #1c1c1c;
+    border: 2px solid #aaaaaa;
+    font-size:x-large;
+    font-weight: bolder;
+    padding:0;
+    color: #ff0100;
+    margin:4px 4px 0 0;
+    display: block;
+    text-align: center;
+}
+
+.circlebottom {
+    float: left;
+}
+
+.total{
+    padding-top: 8px;
+}

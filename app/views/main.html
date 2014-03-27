@@ -1,0 +1,23 @@
+<div class="center">
+    <board-element>
+        <div ng-repeat="tileRow in gameData.tiles" tile-row="tileRow">
+            <slot-element ng-repeat="tile in tileRow" tile="tile">
+                <tile-element>
+                    <div class="number">{{tile.number}}</div>
+                </tile-element>
+            </slot-element>
+
+        </div>
+    </board-element>
+    <div style="width: 52px; height: auto; float:left; padding: 5px;">
+        <div class="circle" ng-repeat="total in gameData.rowTotals" tile-row="tileRow">
+            <div class="total">{{total.total}}</div>
+        </div>
+    </div>
+    <div style="padding: 5px; position: relative;  width: {{60*gameData.colTotals.length}}px;">
+        <div class="circle circlebottom" style="float:left;" ng-repeat="total in gameData.colTotals">
+            <div class="total">{{total.total}}</div>
+        </div>
+    </div>
+</div>
+
